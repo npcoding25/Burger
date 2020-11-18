@@ -1,3 +1,5 @@
+const mysql = require( 'mysql' );
+
 class Database {
     constructor(config) {
         this.connection = mysql.createConnection(config);
@@ -28,7 +30,7 @@ const db = new Database({
     port: 3306,
     user: "root",
     password: process.env.DB_PASSWORD,
-    database: "dbEmployees"
+    database: "burgers_db"
 });
 
 module.exports = db
