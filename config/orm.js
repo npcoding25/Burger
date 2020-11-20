@@ -6,13 +6,13 @@ function selectAll() {
 }
 
 // Insert burger into database
-function insertOne(burger_name, devoured) {
-  return db.query('INSERT INTO burgers (burger_name, devoured) VALUES (?,?)', [burger_name, devoured]);
+function insertOne(burger_name) {
+  return db.query('INSERT INTO burgers (burger_name, devoured) VALUES (?,?)', [burger_name, false]);
 }
 
 // Update burger in database
-function updateOne(burger_name, devoured) {
-  return db.query('UPDATE burgers SET devoured = ? WHERE ?', [burger_name, devoured]);
+function updateOne(id, devoured) {
+  return db.query('UPDATE burgers SET devoured = ? WHERE id = ?', [devoured ? 1 : 0, id]);
 }
   
 module.exports = {selectAll, insertOne, updateOne}

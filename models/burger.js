@@ -4,12 +4,12 @@ function getAllBurgers() {
   return orm.selectAll('burgers');
 }
 
-function addBurger(name) {
-  return orm.insertOne('burgers', { burger_name: name });
+function addBurger(burger_name) {
+  return orm.insertOne(burger_name);
 }
 
-function eatBurger(id) {
-  return orm.updateOne('burgers', { devoured: true }, { id });
+function eatBurger(id, devoured) {
+  return orm.updateOne(id, devoured);
 }
 
 module.exports = {getAllBurgers, addBurger, eatBurger}
