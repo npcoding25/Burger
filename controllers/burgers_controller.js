@@ -17,17 +17,17 @@ router.post('/api/burgers', async function(req, res) {
     res.send({result})
 })
 
-// router.put('/api/burgers/:id', async function(req, res) {
-//     console.log(`[put request]`, req.params)
-//     console.log(req.body.devoured)
-//     const burgerId= req.params.id;
-//     console.log(burgerId);
-//     const devoured = req.body.devoured;
-//     const result = await burger.eatBurger();
-//     res.json(result)
-//     // const devourBurger = await burger.eatBurger(req.params.id)
-//     // console.log(devourBurger)
-//     // res.send(devourBurger)
-// })
+router.put('/api/burgers/:id', async function(req, res) {
+    console.log(`[put request]`, req.params)
+    console.log(req.body.devoured)
+    const burgerId= req.params.id;
+    console.log(burgerId);
+    const devoured = req.body.devoured;
+    const result = await burger.eatBurger();
+    res.json(result)
+    // const devourBurger = await burger.eatBurger(req.params.id)
+    // console.log(devourBurger)
+    // res.send(devourBurger)
+})
 
 module.exports = router

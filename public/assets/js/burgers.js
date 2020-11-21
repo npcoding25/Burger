@@ -1,23 +1,23 @@
 $(document).ready(function () {
 
-  // $(".eatBurger").on("click", function (event) {
+  $(".eatBurger").on("click", function (event) {
 
-  //   event.preventDefault();
+    event.preventDefault();
 
-  //   let updatedBurger = {
-  //     devoured: true
-  //   };
+    let updatedBurger = {
+      devoured: true
+    };
 
-  //   $.ajax("/api/burgers/:id", {
-  //     type: "PUT",
-  //     data: updatedBurger
-  //   }).then(
-  //     function () {
-  //       console.log("Ate Burger");
-  //       location.reload("/");
-  //     }
-  //   );
-  // });
+    $.ajax("/api/burgers/:id", {
+      type: "PUT",
+      data: updatedBurger
+    }).then(
+      function () {
+        console.log("Ate Burger");
+        location.reload("/");
+      }
+    );
+  });
 
   $(".addBurger").on("click", function (event) {
     event.preventDefault();
