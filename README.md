@@ -24,4 +24,4 @@ Once on the webpage the user is presented with a burger image, a list of burgers
 ![image](https://user-images.githubusercontent.com/69565347/99767349-c2c4ef00-2ab7-11eb-8180-f08ff99174d4.png)
 
 
-Click [Here](https://pure-atoll-57383.herokuapp.com/) to see deployed application.
+Click [Here]() to see deployed application.
