@@ -33,4 +33,12 @@ const db = new Database({
     database: "oqdmlsaf6odufnsg"
 });
 
+// const db = new Database({
+//     host: "localhost",
+//     port: 3306,
+//     user: "root",
+//     password: "<Nathan95>",
+//     database: "burgers_db"
+// });
+
 module.exports = db

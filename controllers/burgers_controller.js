@@ -23,6 +23,7 @@ router.put('/api/burgers/:id', async function(req, res) {
     const burgerId= req.params.id;
     console.log(burgerId);
     const devoured = req.body.devoured;
+    // devoured = 1
     const result = await burger.eatBurger(burgerId, devoured);
     const burgers = await burger.getAllBurgers()
 
