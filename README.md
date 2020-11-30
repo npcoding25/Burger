@@ -4,7 +4,7 @@
 
 - [Objective](#Objective)
 - [Functionality](#Functionality)
-- [Improvements](#Challenges/Improvements)
+- [Challenges/Improvements](#Challenges/Improvements)
 - [Screenshots](#Screenshots)
 
 ## Objective 

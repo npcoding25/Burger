@@ -12,7 +12,7 @@ function insertOne(burger_name) {
 
 // Update burger in database
 function updateOne(id, devoured) {
-  return db.query('UPDATE burgers SET devoured = ? WHERE id = ?', [devoured ? 1 : 0, id]);
+  return db.query('UPDATE burgers SET devoured ? WHERE id = ?', [devoured ? 1 : 0, id]);
 }
   
 module.exports = {selectAll, insertOne, updateOne}

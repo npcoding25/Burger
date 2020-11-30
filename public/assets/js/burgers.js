@@ -8,7 +8,8 @@ $(document).ready(function () {
       devoured: true
     };
 
-    $.ajax("/api/burgers/:id", {
+    const id = event.target.id
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: updatedBurger
     }).then(
